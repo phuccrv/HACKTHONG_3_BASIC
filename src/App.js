@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+import HeaderComponent from './Interface';
+import FormNote from './TextNote';
+import { BiTrash,BiPencil } from "react-icons/bi";
 
 function App() {
+  const [notes, setNotes] = useState([]);
+
+  const handleDeleteNote = (index) => {
+    setNotes(prevNotes => prevNotes.filter((note, i) => i !== index));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HeaderComponent />
+      <FormNote setNotes={setNotes} />
+      <div className="notesList">
+        {notes.map((note, index) => (
+          <div className="listText" key={index}>
+            <h3>{note.title}</h3>
+            <p>{note.content}</p>
+            <div className="deleteNote" onClick={() => handleDeleteNote(index)}>
+              <BiTrash />
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
 

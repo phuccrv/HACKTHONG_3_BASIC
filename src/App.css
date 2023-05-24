@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+
+body {
+  height: 100vh;
+  background-color: #e1e1e1 !important; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.nav{
+  background-color: #ffd014;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-item a{
+  color: #ffffff;
+  font-size: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-floating{
+  width: 400px;
 }
 
-.App-link {
-  color: #61dafb;
+.form-floating input{
+  border: none;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formText{
+  margin-left: 550px;
+  margin-top: 50px;
+  border: 1px solid #c0c0c1;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: relative;
+  display: inline-grid;
+  width: 400px;
+
 }
+
+.formText input {
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+
+.addNote svg{
+  width: 30px;
+  height: 30px;
+  background-color: #ffd014;
+  border-radius: 50%;
+  position: absolute;
+  left: 350px;
+  top: 85px;
+}
+
+.notesList{
+  border: 1px solid #000000;
+  width: 500px;
+  margin-left: 500px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  
+  
+}
+
+.notesList h3,p{
+  padding-left: 10px;
+}
+
+.listText {
+ border-bottom: 1px solid #c0c0c1;
+}
+
+.notesList svg{
+  width: 30px;
+  height: 30px;
+  background-color: #ff8686;
+  border-radius: 5px;
+  margin-left:450px;
+  margin-top: -80px;
+  
+}
+
+
