@@ -74,14 +74,44 @@ body {
  border-bottom: 1px solid #c0c0c1;
 }
 
-.notesList svg{
+.deleteNote svg{
   width: 30px;
   height: 30px;
   background-color: #ff8686;
   border-radius: 5px;
   margin-left:450px;
-  margin-top: -80px;
+  margin-top: -90px;
   
 }
 
+.editNote svg{
+  width: 30px;
+  height: 30px;
+  background-color: #6ea6ff;
+  margin-top: 1px;
+  border-radius: 5px;
+  margin-left:450px;
+  margin-top: -60px;
+}
+
+.updateNote {
+  background-color: #6ea6ff;
+  display: inline;
+  padding: 0px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.updateNote:hover{
+  color: #ffffff;
+}
+
+.listText input{
+  border: none;
+  padding: 5px;
+  border-left: 1px solid #c0c0c1;
+}
 
